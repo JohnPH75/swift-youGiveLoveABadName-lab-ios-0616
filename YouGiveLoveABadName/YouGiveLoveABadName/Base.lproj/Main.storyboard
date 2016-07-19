@@ -18,28 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEJ-XM-6d9">
-                                <rect key="frame" x="285" y="536" width="30" height="44"/>
+                                <rect key="frame" x="227" y="536" width="146" height="44"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="⇅"/>
+                                <state key="normal" title="Change Size"/>
                                 <connections>
                                     <action selector="expandButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRQ-aU-fBn"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bonjovi" translatesAutoresizingMaskIntoConstraints="NO" id="2mK-Ph-zer">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonjovi" translatesAutoresizingMaskIntoConstraints="NO" id="2mK-Ph-zer">
                                 <rect key="frame" x="0.0" y="145" width="600" height="310"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2mK-Ph-zer" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="N20-tr-8Lx"/>
-                            <constraint firstItem="LEJ-XM-6d9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGh-Wo-Sbh"/>
-                            <constraint firstItem="2mK-Ph-zer" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VN4-6m-ALd"/>
-                            <constraint firstItem="LEJ-XM-6d9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-20" id="aSQ-Gu-O0M"/>
+                            <constraint firstAttribute="bottom" secondItem="LEJ-XM-6d9" secondAttribute="bottom" constant="20" symbolic="YES" id="1kz-qw-k0g"/>
+                            <constraint firstItem="2mK-Ph-zer" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="88F-3w-ypW"/>
+                            <constraint firstItem="2mK-Ph-zer" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ca1-AU-9Ag"/>
+                            <constraint firstAttribute="trailing" secondItem="2mK-Ph-zer" secondAttribute="trailing" id="FTD-LW-rox"/>
+                            <constraint firstItem="2mK-Ph-zer" firstAttribute="centerX" secondItem="LEJ-XM-6d9" secondAttribute="centerX" id="JOO-Tw-edf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="2mK-Ph-zer" id="Y9m-xj-Zw2"/>
+                        <outlet property="sizeButton" destination="LEJ-XM-6d9" id="eAe-rs-qsi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="317"/>
         </scene>
     </scenes>
     <resources>
